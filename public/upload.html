@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycnus University</title>
+    <link rel="stylesheet" href="../css/vido.css">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/upload.css" />
+    <script src="../js/vido.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/CRY.png" />
+    <script src="/js/connect.js"></script>
+    <script src="http://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav class="nav">
+          <div class="title">
+            <a href="/" style="text-decoration: none;"><b>Cycnus <span style="color: blueviolet">University</span></b></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Users</button>
+            <div class="dropdown-content">
+              <a href="#profile">ToC</a>
+              <a href="#settings">ToB</a>
+              <a href="#logout">ToU</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+              <a href="#service1">Free Courses</a>
+              <a href="#service2">Get Degrees</a>
+              <a href="#service3">Get Certificates</a>
+              <a href="#service4">Find Remote Work</a>
+            </div>
+          </div>
+          <a href="/Cycnus_University_Document.pdf" style="text-decoration: none; color: black;">Document</a>
+          <a href="team.html" style="text-decoration: none; color: black;">Teams</a>
+          <div class="dropdown">
+            <button class="dropbtn">Courses</button>
+            <div class="dropdown-content">
+              <a href="vido.html">Nature & Science</a>
+              <a href="#course2">Literature</a>
+            </div>
+          </div>
+          <a href="#Contact" style="text-decoration: none; color: black;">Contact</a>
+          <div class="Wallet">
+            <button onclick="connectWallet()" style="margin-top: -10px;">[<span id="walletAddress" style="color: blueviolet">WalletConnect</span>]</button>
+            <img id="WalletAddressImage" style="height: auto;width: 30px;"/>
+          </div>
+        </nav>
+      </div>
+    <div class="amcontainer">
+        <form class="amupload" id="uploadForm" enctype="multipart/form-data">
+            <label class="ambutton1" for="category">Classification:</label>
+            <select class="ambutton2" id="category" name="category" required>
+              <option value="">please select a type</option>
+              <option value="computer">Computer</option>
+              <option value="physics">Physics</option>
+              <option value="chemistry">Chemistry</option>
+              <option value="biology">Biology</option>
+              <option value="world_literature">World history</option>
+              <option value="modern_literature">World geography</option>
+          </select><br>
+            <label for="title">Title:</label>
+            <input class="text" type="text" id="title" name="title" required><br>
+            <label for="video">Video File:</label>
+            <div class="drop-zone" id="drop-zone">Drag & Drop file here or click to select file</div>
+            <input type="file" id="video" name="video" accept="video/*" style="display: none;" required><br>
+            <button class="amsubmit" type="submit">Upload</button>
+        </form>
+        <div id="message"></div>
+        <button class="ambutton" onclick="window.location.href='/vido.html'">Return To Home Page</button>
+    </div>
+    <div class="finalPage" style="height: 500px;">
+        <div class="i">
+          <img src="/images/cycnus.png">
+          <p style="color: white;">The web3 development platform</p>
+          <p style="color: white;">—— Power by THALLO Labs</p>
+        </div>
+        <div class="c">
+          <img src="/images/telegram.svg" alt="telegram Logo" style="width: 30px;height: auto;">
+          <img src="/images/twitter.svg" alt="Twitter Logo">
+          <img src="/images/discord.svg" alt="Discord Logo">
+          <img src="/images/youtube.svg" alt="YouTube Logo">
+        </div>
+        <div class="entry" style="color: #f3f3ff; display: flex;">
+          <ul class="ulUsers">
+            <li>Users</li>
+            <li>To C</li>
+            <li>To B</li>
+            <li>To U </li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Services</li>
+            <li>Free Courses</li>
+            <li>Get Degrees</li>
+            <li>Get Certificates</li>
+            <li>Find Remote Work</li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Document</li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Teams</li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Courses</li>
+            <li>Nature & Science</li>
+            <li>Literature</li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('/api/videos/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.success) {
+                    setTimeout(() => {
+                        window.location.href = '/vido.html';
+                    }, 2000);
+                }
+            })
+            .catch(error => {
+                console.error('Error uploading video:', error);
+                alert('Upload failed, please try again');
+            });
+        });
+
+        const dropZone = document.getElementById('drop-zone');
+        const videoInput = document.getElementById('video');
+
+        dropZone.addEventListener('click', () => videoInput.click());
+
+        dropZone.addEventListener('dragover', (event) => {
+            event.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+
+        dropZone.addEventListener('drop', (event) => {
+            event.preventDefault();
+            dropZone.classList.remove('dragover');
+
+            if (event.dataTransfer.files.length) {
+                videoInput.files = event.dataTransfer.files;
+                dropZone.textContent = event.dataTransfer.files[0].name;
+            }
+        });
+
+        videoInput.addEventListener('change', () => {
+            if (videoInput.files.length) {
+                dropZone.textContent = videoInput.files[0].name;
+            }
+        });
+    </script>
+</body>
+</html>

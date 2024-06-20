@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycnus University</title>
+    <link rel="stylesheet" href="../css/vido.css">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="icon" type="image/x-icon" href="/images/CRY.png" />
+    <script src="/js/connect.js"></script>
+    <script src="http://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav class="nav">
+          <div class="title">
+            <a href="/" style="text-decoration: none;"><b>Cycnus <span style="color: blueviolet">University</span></b></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Users</button>
+            <div class="dropdown-content">
+              <a href="#profile">ToC</a>
+              <a href="#settings">ToB</a>
+              <a href="#logout">ToU</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+              <a href="#service1">Free Courses</a>
+              <a href="#service2">Get Degrees</a>
+              <a href="#service3">Get Certifcates</a>
+              <a href="#service4">Find Remote Work</a>
+            </div>
+          </div>
+          <a href="/Cycnus_University_Document.pdf" style="text-decoration: none; color: black;">Document</a>
+          <a href="team.html" style="text-decoration: none; color: black;">Teams</a>
+          <div class="dropdown">
+            <button class="dropbtn">Courses</button>
+            <div class="dropdown-content">
+              <a href="vido.html">Nature & Science</a>
+              <a href="#course2">Literature</a>
+            </div>
+          </div>
+          <a href="#Contact" style="text-decoration: none; color: black;">Contact</a>
+          <div class="Wallet">
+            <button onclick="connectWallet()" style="margin-top: -10px;">[<span id="walletAddress" style="color: blueviolet">WalletConnect</span>]</button>
+            <img id="WalletAddressImage" style="height: auto;width: 30px;"/>
+          </div>
+        </nav>
+      </div>
+    <div class="aw-container">
+        <div class="aw-sidebar" id="sidebar" style="background-color: rgba(255, 255, 255, 0);">
+            <button id="toggleButton" class="aw-toggle-button" onclick="toggleSidebar()" style="background-color: rgba(255, 255, 255, 0);;"><a href="vido.html">⛪</a></button>
+            <div class="aw-dropdown-container">
+                <h2 class="aw-dropdown-header" onclick="toggleDropdown(this)" style="color: rgb(120, 57, 179);">Natural Science</h2>
+                <ul class="aw-dropdown-content">
+                    <li><a href="#" onclick="showVideos('computer')">Computer</a></li>
+                    <li><a href="#" onclick="showVideos('physics')">Physics</a></li>
+                    <li><a href="#" onclick="showVideos('chemistry')">Chemical</a></li>
+                    <li><a href="#" onclick="showVideos('biology')">Biology</a></li>
+                </ul>
+            </div>
+            <div class="aw-dropdown-container">
+                <h2 class="aw-dropdown-header" onclick="toggleDropdown(this)" style="color: rgb(120, 57, 179);">Literature</h2>
+                <ul class="aw-dropdown-content">
+                    <li><a href="#" onclick="showVideos('world_literature')">World history</a></li>
+                    <li><a href="#" onclick="showVideos('modern_literature')">World geography</a></li>
+                </ul>
+            </div>
+            <button class="UPload_Video" onclick="window.location.href='/upload.html'">UPload_Video</button>
+        </div>
+
+        <div class="aw-main-content" id="main-content">
+            <!-- 视频展示区 -->
+        </div>
+    </div>
+    <!-- <button onclick="window.location.href='/upload.html'">UPload_Video</button> -->
+    <div class="finalPage" style="height: 500px;">
+        <div class="i">
+          <img src="/images/cycnus.png">
+          <p style="color: white;">The web3 growthful platform</p>
+          <p style="color: white;">—— Power by THALLO Labs</p>
+        </div>
+        <div class="c">
+          <img src="/images/telegram.svg" alt="telegram Logo" style="width: 30px;height: auto;">
+          <img src="/images/twitter.svg" alt="Twitter Logo">
+          <img src="/images/discord.svg" alt="Discord Logo">
+          <img src="/images/youtube.svg" alt="YouTube Logo">
+        </div>
+        <div class="entry" style="color: #f3f3ff; display: flex;">
+          <ul class="ulUsers">
+            <li>Users</li>
+            <li>To C</li>
+            <li>To B</li>
+            <li>To U </li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Services</li>
+            <li>Free Courses</li>
+            <li>Get Degrees</li>
+            <li>Get Certifcates</li>
+            <li>Find Remote Work</li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Document</li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Teams</li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Courses</li>
+            <li>Nature & Science</li>
+            <li>Literature</li>
+          </ul>
+          <ul class="ulUsers">
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    <script src="../js/vido.js"></script>
+</body>
+</html>

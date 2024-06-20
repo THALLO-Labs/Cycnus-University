@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycnus University</title>
+    <link rel="stylesheet" href="../css/threeCourse.css">
+    <script src="/js/connect.js"></script>
+  <script src="http://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+  
+</head>
+
+<body>
+    <div class="header">
+        <nav class="nav">
+          <div class="title">
+            <a href="/" style="text-decoration: none;"><b>Cycnus <span style="color: blueviolet">University</span></b></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Users</button>
+            <div class="dropdown-content">
+              <a href="#profile">ToC</a>
+              <a href="#settings">ToB</a>
+              <a href="#logout">ToU</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+              <a href="#service1">Free Courses</a>
+              <a href="#service2">Get Degrees</a>
+              <a href="#service3">Get Certifcates</a>
+              <a href="#service4">Find Remote Work</a>
+            </div>
+          </div>
+          <a href="/Cycnus_University_Document.pdf" style="text-decoration: none; color: black;">Document</a>
+          <a href="#" style="text-decoration: none; color: black;">Teams</a>
+          <div class="dropdown">
+            <button class="dropbtn">Courses</button>
+            <div class="dropdown-content">
+              <a href="#course1">Nature & Science</a>
+              <a href="#course2">Literature</a>
+            </div>
+          </div>
+          <a href="#" style="text-decoration: none; color: black;">Contact</a>
+          <div class="Wallet">
+            <button  onclick="connectWallet()">[<spen style="color: blueviolet">WalletConnect</spen>]</button>
+          </div>
+        </nav>
+    </div>
+    <div class="container1" style="background-image: url(../images/js-background.png);background-size: cover;">
+        <div class="nav1">
+          <span><a href="../public/courses.html" style="list-style-type: none;"><b>All courses</b></a><b>></b><img src="../images/js-couser-cion.png" alt="eth-course-cion">&nbsp;Learn JavaScript</span>
+        </div>
+        <div class="firstPage">
+              <div class="content">
+                <h1>Learn <br><span style="color: rgb(255,149,115);">JavaScript</span></h1>
+                <p>3 week crash course to learn how to code and become a JavaScript expert, a core foundation to web3 development. No experience necessary.</p>
+                <div class="introduce">
+                  <div class="one"><b>49 lessons</b></div>
+                  <div class="one"><b>Beginner skill level</b></div>
+                  <div class="one"><b>No pre-requisite</b></div>
+                </div>
+              </div>
+            <div class="title1R">
+              <div class="video">
+                <iframe
+                  src="//player.bilibili.com/player.html?isOutside=true&aid=1105355954&bvid=BV1ww4m1q7uW&cid=1573847732&p=1"
+                  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+              </div>
+              <button class="Start">Start course</button>
+              <div class="join">Join 18K+ enrolled students</div>
+            </div> 
+          </div>
+    </div>
+    <div class="container2">
+      <div class="secondPage">
+          <div class="title1">
+          <div class="title1Left">
+            <b>About the </b><b style="color: rgb(255,149,115);">course</b>
+          </div>
+          <div class="title1Right">
+            <div class="title1Right1">
+                This JavaScript crash course covers the basics of programming through advanced topics like asynchronous requests and promises. The most used developer tools and libraries for Ethereum are JavaScript based, making it a key foundation to web3 development.<br><br>
+                Recommended but not required for the Ethereum Dev. Bootcamp!
+            </div>
+            <div class="title1Right2">
+              <b>Skills you'll obtain</b>
+              <div class="title1Right3">
+                <div class="title1Right3-1"><b>Master JavaScript</b></div>
+                <div class="title1Right3-1"><b>Coding Basics</b></div>
+                <div class="title1Right3-1"><b>Server Setup</b></div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/js-carousel-1.png" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/js-carousel-2.png" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/js-carousel-3.png" alt="Image 3">
+                </div>
+            </div>
+            <div class="botn">
+                <button class="botnOne"></button>
+                <button class="botnTwo"></button>
+                <button class="botnThree"></button>
+            </div>
+        </div>
+          <div class="title2">
+            <div class="title2Left">
+              <b>Earn your </b><b style="color:aqua;">NFT <br>certificate</b>
+              <p>Complete the Ethereum Developer Bootcamp to earn an NFT certificate</p>
+              <button class="btn"><b>Start course</b></button>
+            </div>
+            <div class="title2Right">
+              <img src="../images/paiStar.jpg" alt="">
+            </div>
+          </div>
+          <div class="title3">
+            <div class="title3Top">
+              <b>Student&nbsp;<span style="color: aqua;">Spotlight</span></b>
+            </div>
+            <div class="bottom">
+              <div class="text1">I learned the skillset I needed to transition from web2 to web3 and it led directly to landing my dream job and helping secure the open economy.</div>
+              <div class="text2"><b>Dan McKeon,</b> </div>
+              <div class="text3">Full Stack Ethereum Developer</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="container3">
+      <div class="thirdPage1">
+          <div class="tFirst">
+            <b>Syllabus</b>
+          </div>
+          <div class="tSecond">
+            <div class="one">88 lessons</div>
+            <div class="one">13 videos</div>
+            <div class="one">8 projects</div>
+          </div>
+      </div>
+      <div class="thirdPage2">
+        <div class="tLeft">
+          <b>Blockchain Cryptography</b><br>
+          <p>Learning Core Blockchain Cryptography</p>
+        </div>
+        <div class="tRight">
+          <div class="tRight1">
+            <b>10 lessons</b>
+          </div>
+          <div class="tRight1">
+            <b>4 videos</b>
+          </div>
+          <div class="tRight2">
+            <img src="../images/point.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Bootcamp Introduction:</b><span>Itemized advice on maximizing your AU learning experience!</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images/markdown-pink.svg" alt=""><b>&nbsp;Ethereum Dev. Bootcamp Tips & Tricks</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>The First Primitive: </b><span>Blockchain and Cryptographic Hashes</span><img src="../images/point.svg" alt="" style="margin-left: auto;"></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images/video-blue.svg" alt=""><b>&nbsp;Blockchain and Crypto</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Cryptographic Hashes</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Digital Signatures:</b><span>Verify a Signature Without Revealing a Private Key</span><img src="../images/point.svg" alt="" style="margin-left: auto;"></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images/video-blue.svg" alt=""><b>&nbsp;Public Key Cryptography</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Public Key Exercise</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images/markdown-pink.svg" alt=""><b>&nbsp;Further Study</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Proof of Work:</b><span>Intro to Blockchain Consensus Mechanisms</span><img src="../images/point.svg" alt="" style="margin-left: auto;"></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images/video-blue.svg" alt=""><b>&nbsp;Mining & Proof-of-Work</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Proof of Work Miner</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images/markdown-pink.svg" alt=""><b>&nbsp;Proof of Work</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images/markdown-pink.svg" alt=""><b>&nbsp;Further Study</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Blockchain Network:</b><span>How Blockchain Functions as a Network</span><img src="../images/point.svg" alt="" style="margin-left: auto;"></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images/video-blue.svg" alt=""><b>&nbsp;Blockchain Structure</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Blockchain Data Structure</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images/markdown-pink.svg" alt=""><b>&nbsp;Further Study</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Week 1 Project: </b><span>Build a Project with Cryptography</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;ECDSA Node Project</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2">
+        <div class="tLeft" style="margin-right: -2%;">
+          <b>Blockchain Storage</b><br>
+          <p>Blockchain Balances and Data Structures</p>
+        </div>
+        <div class="tRight">
+          <div class="tRight1">
+            <b>9 lessons</b>
+          </div>
+          <div class="tRight1">
+            <b>3 videos</b>
+          </div>
+          <div class="tRight2">
+            <img src="../images/point.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Keeping Track of Blockchain User State: </b><span>How Do Blockchains Keep Track of User State?
+          </span><img src="../images/point.svg" alt="" style="margin-left: auto;"></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images/video-blue.svg" alt=""><b>&nbsp;UTXO vs Account Model</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Coding the UTXO Model</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images/markdown-pink.svg" alt=""><b>&nbsp;UTXO Locking & Unlocking Scripts</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Tree Data Structures:</b><span> Learning to Build and Work with Trees</span><img src="../images/point.svg" alt="" style="margin-left: auto;"></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images/video-blue.svg" alt=""><b>&nbsp;Basic Tree Data Structures</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Build a Binary Search Tree</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images/markdown-pink.svg" alt=""><b>&nbsp;Merkle Tree Intro</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Merkle Trees</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Blockchain Data Storage: </b><span>Understanding data storage on blockchains</span><img src="../images/point.svg" alt="" style="margin-left: auto;"></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images/video-blue.svg" alt=""><b>&nbsp;Merkle Trees in Blockchains</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Ethereum Tries</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images/coding-green.svg" alt=""><b>&nbsp;Learn Tries</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images/markdown-pink.svg" alt=""><b>&nbsp;Supplemental Reading</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Week 2 Assignments:</b><span>A coding project and recap of the week article</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Merkle Gift List</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2">
+        <div class="tLeft" style="margin-right: 13%;">
+          <b>Ethereum</b><br>
+          <p>Diving into the State Machine</p>
+        </div>
+        <div class="tRight">
+          <div class="tRight1" style="padding: 3% 23% 3% 23%;">
+            <b>16 lessons</b>
+          </div>
+          <div class="tRight2">
+            <img src="../images/point.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Ethereum Features:</b><span>High Level Overview of Ethereum</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Introduction to Ethereum</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Proof of Stake</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Gas on Ethereum</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Transactions Game</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Ethereum Accounts</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Supplemental Reading</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Reading Data from Ethereum:</b><span>Ethereum Clients and the JSON RPC API</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Read Requests</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Activity: Query Ethereum</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Ethereum Nodes</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;JSON-RPC Requests</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Ethereum Transactions:</b><span>Transactions = Signed JSON-RPC Requests</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Intro to Transactions</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Code a Transaction</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Front-End Libraries:</b><span>Ethereum Front-End Libraries</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Intro to Front-end Libraries</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Intro to Ethers.js</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Where is the Ether?</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Week 3 Assignments: </b><span>A Project and Reflections on Week 3</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Build your own Block Explorer</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2">
+        <div class="tLeft" style="margin-right: -3.5%;">
+          <b>Smart Contract Basics</b><br>
+          <p>Diving into Solidity Syntax and Data Types</p>
+        </div>
+        <div class="tRight">
+          <div class="tRight1">
+            <b>20 lessons</b>
+          </div>
+          <div class="tRight1">
+            <b>2 projects</b>
+          </div>
+          <div class="tRight2">
+            <img src="../images/point.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Solidity Syntax:</b><span>Learning the Basics of Solidity</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Solidity Syntax</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Data Types</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Solidity and the EVM</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Solidity at a Glance</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Functions:</b><span>Solidity Functions & Visibility</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Solidity Functions</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Functions</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Smart Contract Communication:</b><span>How Do We Talk to Smart Contracts?</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Contract Communication</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Contracts with ethers.js</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Intro to Hardhat:</b><span>Hardhat is Here to Help!</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;What is Hardhat?</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(255,251,235);">
+          <div><img src="../images//guide-yellow.svg" alt=""><b>&nbsp;Guide: How to Deploy a Contract with Ethers + Hardhat</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(255,251,235);">
+          <div><img src="../images//guide-yellow.svg" alt=""><b>&nbsp;Guide: How to Modify State using Hardhat</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Address Interactions:</b><span>Contracts Communicating with Addresses</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Calling EOAs</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Sending Ether</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Reverting Transactions</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Learning Revert</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Calling Contracts</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Sending Data</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Practice Solidity:</b><span>Put your Solidity skills to the test!</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Sum and Average</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Countdown</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Week 4 Assignments:</b><span>Challenges and Reflections on Week 4</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Smart Contract Winner</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Hardhat Guide: How To Unit Test Contracts</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Week 4 Recap + Feedback</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2">
+        <div class="tLeft" style="margin-right: 9%;">
+          <b>Solidity</b><br>
+          <p>Mastering the Solidity Language</p>
+        </div>
+        <div class="tRight">
+          <div class="tRight1">
+            <b>9 lessons</b>
+          </div>
+          <div class="tRight1">
+            <b>1 projects</b>
+          </div>
+          <div class="tRight2">
+            <img src="../images/point.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Mappings:</b><span>Revert & Mappings</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Mappings</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Mappings</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(255,251,235);">
+          <div><img src="../images//guide-yellow.svg" alt=""><b>&nbsp;Contract Puzzles</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Events: </b><span>Events, Logs and Receipts</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Events</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images//video-blue.svg" alt=""><b>&nbsp;Local Hardhat Games</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Events</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Escrow Contract:</b><span>Build an Escrow Smart Contract</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images//video-blue.svg" alt=""><b>&nbsp;Escrow Introduction</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Build an Escrow</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Reference Types:</b><span>Arrays & Structs</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Arrays & Structs</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Arrays</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Structs</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Week 5 Project:</b><span>Lets work on a dapp</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Decentralized Escrow Applicationr</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2">
+        <div class="tLeft" style="margin-right: 15%;">
+          <b>Solidity Core</b><br>
+          <p>The Core Solidity Concepts</p>
+        </div>
+        <div class="tRight">
+          <div class="tRight1">
+            <b>16 lessons</b>
+          </div>
+          <div class="tRight1">
+            <b>2 projects</b>
+          </div>
+          <div class="tRight2">
+            <img src="../images/point.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Solidity Challenges:</b><span>Honing Solidity Skills</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Solidity Practice</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Party Split</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Dead Man's Switch</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Hackathon Ratings</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Multi-Sigs:</b><span>Learn All About the Features of Multi-Sigs</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;What is a Multi-Sig Contract?</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Multiple Signature Wallet</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Inheritance:</b><span>Contracts That Build on Each Other</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;What is Inheritance?</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Inheritance</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>ERC-20:</b><span>The Fungible Token Standard: ERC20</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;What Is The ERC-20 Token Standard?</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;ERC-20 Token</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(255,251,235);">
+          <div><img src="../images//guide-yellow.svg" alt=""><b>&nbsp;Deploy Your Own Token</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;ERC-20 Treasure Chest</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Fetching Token Transfers</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images//video-blue.svg" alt=""><b>&nbsp;Send ERC20s to Contracts</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;ERC-20 Token Indexer App</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>NFTs:</b><span>Learning Non-Fungible Tokens</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;What are NFTs?</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(255,251,235);">
+          <div><img src="../images//guide-yellow.svg" alt=""><b>&nbsp;How to Mint NFTs</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;NFT Indexer App</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Week 6 Recap:</b><span>Reflections on Week 6</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Week 6 Recap + Feedback</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2">
+        <div class="tLeft" style="margin-right: 5%;">
+          <b>Solidity Governance</b><br>
+          <p>How Smart Contracts are Governed</p>
+        </div>
+        <div class="tRight">
+          <div class="tRight1">
+            <b>6 lessons</b>
+          </div>
+          <div class="tRight1">
+            <b>2 projects</b>
+          </div>
+          <div class="tRight2">
+            <img src="../images/point.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Proxy Contracts:</b><span>Delegate to Other Contracts</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images//video-blue.svg" alt=""><b>&nbsp;Storage Slots</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images//video-blue.svg" alt=""><b>&nbsp;Delegatecall</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(239,249,255);">
+          <div><img src="../images//video-blue.svg" alt=""><b>&nbsp;Evolution of Proxies</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Libraries:</b><span>Learn about Solidity Libraries</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Introduction to Libraries</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Smart Contract Libraries</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Upgrading Contracts:</b><span>Learn Frameworks for Upgrading Contracts</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;What is Smart Contract Upgradeability?</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(255,251,235);">
+          <div><img src="../images//guide-yellow.svg" alt=""><b>&nbsp;Deploy Upgradeable Smart Contracts</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Governance:</b><span>How Smart Contract Protocols are Governed</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;The State of Governance</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(240,253,244);">
+          <div><img src="../images//coding-green.svg" alt=""><b>&nbsp;Basic Governance</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(255,251,235);">
+          <div><img src="../images//guide-yellow.svg" alt=""><b>&nbsp;The Governor Standard</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2-1">
+        <div class="sbox">
+          <div><b>Week 7 Recap:</b><span>Reflections on Week 7</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Week 7 Recap</b></div>
+        </div>
+      </div>
+      <div class="thirdPage2  margin-bottom-5" style="border-radius: 0px 0px 10px 10px; ">
+        <div class="tLeft" style="margin-right: 11%;">
+          <b>Final Project & Certifications</b><br>
+          <p>Ready for the Final Challenge?</p>
+        </div>
+        <div class="tRight">
+          <div class="tRight1">
+            <b>2 lessons</b>
+          </div>
+          <div class="tRight1">
+            <b>1 projects</b>
+          </div>
+          <div class="tRight2">
+            <img src="../images/point.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="thirdPage2-1" style="margin-bottom: 5%;">
+        <div class="sbox">
+          <div><b>Final Project:</b><span>Requirements for AU Certification</span><img src="../images/point.svg" alt=""></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Final Project Guidelines</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(251,244,255);">
+          <div><img src="../images//markdown-pink.svg" alt=""><b>&nbsp;Final Project Resources</b></div>
+        </div>
+        <div class="ssbox" style="background-color: rgb(255,251,235);">
+          <div><img src="../images//guide-yellow.svg" alt=""><b>&nbsp;Final Project Submission</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="finalPage">
+        
+      <div class="i">
+        <img src="/images/cycnus.png">
+        <p style="color: white;">The web3 development platform</p>
+        <p style="color: white;">—— Power for THALLO Labs</p>
+      </div>
+      <div class="c">
+        <img src="/images/telegram.svg" alt="telegram Logo" style="width: 30px;height: auto;">
+        <img src="/images/twitter.svg" alt="Twitter Logo">
+        <img src="/images/discord.svg" alt="Discord Logo">
+        <img src="/images/youtube.svg" alt="YouTube Logo">
+      </div>
+      <div class="entry" style="color: #f3f3ff; display: flex;">
+        <ul class="ulUsers">
+          <li>Users</li>
+          <li>To A</li>
+          <li>To B</li>
+          <li>To C</li>
+        </ul>
+        <ul class="ulUsers">
+          <li>Services</li>
+          <li>Free Courses</li>
+          <li>Get Degrees</li>
+          <li>Get Certifcates</li>
+          <li>Find Remote Work</li>
+        </ul>
+        <ul class="ulUsers">
+          <li>Document</li>
+        </ul>
+        <ul class="ulUsers">
+          <li>Teams</li>
+        </ul>
+        <ul class="ulUsers">
+          <li>Courses</li>
+          <li>Nature & Science</li>
+          <li>Literature</li>
+        </ul>
+        <ul class="ulUsers">
+          <li>Contract</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <script src="../js/eth.js"></script>
+</body>
+</html>

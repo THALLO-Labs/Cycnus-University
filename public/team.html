@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Cycnus University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/team.css" />
+  <script src="/js/index.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/CRY.png" />
+  <script src="/js/connect.js"></script>
+  <script src="http://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="nav">
+      <div class="title">
+        <a href="/" style="text-decoration: none;"><b>Cycnus <span style="color: blueviolet">University</span></b></a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Users</button>
+        <div class="dropdown-content">
+          <a href="#profile">ToC</a>
+          <a href="#settings">ToB</a>
+          <a href="#logout">ToU</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Services</button>
+        <div class="dropdown-content">
+          <a href="#service1">Free Courses</a>
+          <a href="#service2">Get Degrees</a>
+          <a href="#service3">Get Certificates</a>
+          <a href="#service4">Find Remote Work</a>
+        </div>
+      </div>
+      <a href="/Cycnus_University_Document.pdf" style="text-decoration: none; color: black;">Document</a>
+      <a href="#" class="teams" style="text-decoration: none; color: black;">Teams</a>
+      <div class="dropdown">
+        <button class="dropbtn">Courses</button>
+        <div class="dropdown-content">
+          <a href="#course1">Nature & Science</a>
+          <a href="#course2">Literature</a>
+        </div>
+      </div>
+      <a href="#" style="text-decoration: none; color: black;">Contact</a>
+      <div class="Wallet">
+        <button onclick="connectWallet()" style="margin-top: -10px;">[<span id="walletAddress" style="color: blueviolet">WalletConnect</span>]</button>
+        <img id="WalletAddressImage" style="height: auto;width: 30px;"/>
+      </div>
+    </nav>
+  </div>
+  <div class="firstPage">
+    <div class="person">
+        <div class="photo">
+            <img src="/images/1.jpg" alt="Person 1">
+        </div>
+        <div class="info">
+            <h2>Alan Zechariah</h2>
+            <p class="position">Founder and CEO</p>
+            <p class="description">The founder and CEO of the leading platform Cycnus University web3</p>
+        </div>
+    </div>
+    <div class="person">
+        <div class="photo">
+            <img src="/images/2.jpg" alt="Person 2">
+        </div>
+        <div class="info">
+            <h2>Edith Jones</h2>
+            <p class="position">Founder and CTO</p>
+            <p class="description">The founder and CTO of the leading platform Cycnus University web3</p>
+        </div>
+    </div>
+    <div class="person">
+        <div class="photo">
+            <img src="/images/3.jpg" alt="Person 3">
+        </div>
+        <div class="info">
+            <h2>Emma Max</h2>
+            <p class="position">Founder and PM</p>
+            <p class="description">The founder and PM of the leading platform Cycnus University web3</p>
+        </div>
+    </div>
+    <div class="person">
+        <div class="photo">
+            <img src="/images/4.jpg" alt="Person 4">
+        </div>
+        <div class="info">
+            <h2>Gustave Bess</h2>
+            <p class="position">Founder and FE</p>
+            <p class="description">The founder and FE of the leading platform Cycnus University web3</p>
+        </div>
+    </div>
+    <div class="list">
+      <div class="cc rowleft">
+          <div class="item">Bertha Burne-Jones</div>
+          <div class="item">Faithe Leigh</div>
+          <div class="item">Abraham Antoinette</div>
+          <div class="item">Myrna Henry</div>
+          <div class="item">Simon Keats</div>
+          <div class="item">Porter Marcus</div>
+          <div class="item">Hannah Nancy</div>
+          <div class="item">Judy Walton</div>
+          <div class="item">Mick Ellis</div>
+          <!-- Duplicate items for seamless looping -->
+          <div class="item">Rita Clarissa</div>
+          <div class="item">Rose Mill</div>
+          <div class="item">Barlow Faraday</div>
+          <div class="item">Phoenix Noah</div>
+          <div class="item">Alexander Harvey</div>
+          <div class="item">Erica Adam</div>
+          <div class="item">Geoffrey Nehemiah</div>
+          <div class="item">Ken IV.</div>
+          <div class="item">Jamie Max</div>
+      </div>
+  </div>
+  <div class="list2">
+    <div class="cc rowleft">
+        <div class="item">Hedda Bach</div>
+        <div class="item">Ruth</div>
+        <div class="item">Winston Burns</div>
+        <div class="item">Elma Giles</div>
+        <div class="item">Kirk London</div>
+        <div class="item">Norton Bessemer</div>
+        <div class="item">Tina Charley</div>
+        <div class="item">Buck Melville</div>
+        <div class="item">Myron Catharine</div>
+        <!-- Duplicate items for seamless looping -->
+        <div class="item">Glenn Delia</div>
+        <div class="item">Phyllis Doherty</div>
+        <div class="item">Debby Hewlett</div>
+        <div class="item">Phoenix Noah</div>
+        <div class="item">Griselda Surrey</div>
+        <div class="item">Broderick Kellogg</div>
+        <div class="item">Geoffrey Nehemiah</div>
+        <div class="item">Barret Minnie</div>
+        <div class="item">Ella Gus</div>
+    </div>
+</div>
+<div class="list3">
+  <div class="cc rowleft">
+      <div class="item">Page Agnes</div>
+      <div class="item">Perry Wild</div>
+      <div class="item">Ted Joan</div>
+      <div class="item">Beacher Eve</div>
+      <div class="item">Ulysses Bacon</div>
+      <div class="item">Benedict Hill</div>
+      <div class="item">Kimberley Gracie</div>
+      <div class="item">Alva Bulwer</div>
+      <div class="item">Dylan Samuel</div>
+      <!-- Duplicate items for seamless looping -->
+      <div class="item">Jessica George</div>
+      <div class="item">Eve Keppel</div>
+      <div class="item">Xenia Commons</div>
+      <div class="item">Eunice Tobias</div>
+      <div class="item">Alexander Harvey</div>
+      <div class="item">Lyndon Lee</div>
+      <div class="item">Burnell Fox</div>
+      <div class="item">Eugene Orlando</div>
+      <div class="item">Katherine Yule</div>
+  </div>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+        const lists = document.querySelectorAll('.cc');
+        
+        lists.forEach(list => {
+            const items = Array.from(list.children);
+            const totalItems = items.length;
+            
+            // Clone the items to ensure the total width is more than 100%
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                list.appendChild(clone);
+            });
+
+            // Adjust animation duration based on the number of items
+            const duration = parseInt(getComputedStyle(list).animationDuration);
+            list.style.animationDuration = `${duration * totalItems / items.length}s`;
+        });
+    });
+</script>
+
+  <div class="finalPage">
+  <div class="amcards">
+    <div class="amcard">
+        <div class="amicon">
+            <img src="/images/youtube.svg" alt="YouTube Logo">
+            <div class="amtitle">YouTube</div>
+        </div>
+        <div class="amsubscribe">17k subscribers</div>
+        <div class="amsubtitle">Stay up to date with our latest tutorials.</div>
+    </div>
+    <div class="amcard">
+      <div class="amicon">
+          <img src="/images/discord.svg" alt="Discord Logo">
+          <div class="amtitle">Discord</div>
+      </div>
+      <div class="amsubscribe">29k members</div>
+      <div class="amsubtitle">Join the Discord community.</div>
+    </div>
+    <div class="amcard">
+      <div class="amicon">
+          <img src="/images/twitter.svg" alt="Twitter Logo">
+          <div class="amtitle">Twitter</div>
+      </div>
+      <div class="amsubscribe">55k followers</div>
+      <div class="amsubtitle">Follow us on Twitter for announcements.</div>
+    </div>
+    <div class="amcard">
+      <div class="amicon">
+          <img src="/images/telegram.svg" alt="telegram Logo">
+          <div class="amtitle">telegram</div>
+      </div>
+      <div class="amsubscribe">17k subscribers</div>
+      <div class="amsubtitle">Stay up to date with our latest tutorials.</div>
+    </div>
+  </div>
+  <div class="i">
+    <img src="/images/cycnus.png">
+    <p style="color: white;">The web3 growthful platform</p>
+    <p style="color: white;">—— Power for THALLO Labs</p>
+  </div>
+  <div class="c">
+    <img src="/images/telegram.svg" alt="telegram Logo" style="width: 30px;height: auto;">
+    <img src="/images/twitter.svg" alt="Twitter Logo">
+    <img src="/images/discord.svg" alt="Discord Logo">
+    <img src="/images/youtube.svg" alt="YouTube Logo">
+  </div>
+  <div class="entry" style="color: #f3f3ff; display: flex;">
+    <ul class="ulUsers">
+      <li>Users</li>
+      <li>To A</li>
+      <li>To B</li>
+      <li>To C</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Services</li>
+      <li>Free Courses</li>
+      <li>Get Degrees</li>
+      <li>Get Certifcates</li>
+      <li>Find Remote Work</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Document</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Teams</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Courses</li>
+      <li>Nature & Science</li>
+      <li>Literature</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Contract</li>
+    </ul>
+  </div>
+</div>
+</body>
+
+</html>

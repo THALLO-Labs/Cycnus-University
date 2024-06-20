@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Cycnus University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <script src="/js/index.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/CRY.png" />
+  <script src="/js/connect.js"></script>
+  <script src="http://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="nav">
+      <div class="title">
+        <a href="/" style="text-decoration: none;"><b>Cycnus <span style="color: blueviolet">University</span></b></a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Users</button>
+        <div class="dropdown-content">
+          <a href="#profile">ToC</a>
+          <a href="#settings">ToB</a>
+          <a href="#logout">ToU</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Services</button>
+        <div class="dropdown-content">
+          <a href="#service1">Free Courses</a>
+          <a href="#service2">Get Degrees</a>
+          <a href="#service3">Get Certifcates</a>
+          <a href="#service4">Find Remote Work</a>
+        </div>
+      </div>
+      <a href="/Cycnus_University_Document.pdf" style="text-decoration: none; color: black;">Document</a>
+      <a href="team.html" style="text-decoration: none; color: black;">Teams</a>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="vido.html" style="text-decoration: none; color: black;">Courses</a></button>
+        <div class="dropdown-content">
+          <a href="vido.html">Nature & Science</a>
+          <a href="#course2">Literature</a>
+        </div>
+      </div>
+      <a href="#Contact" style="text-decoration: none; color: black;">Contact</a>
+      <div class="Wallet">
+        <button onclick="connectWallet()" style="margin-top: -10px;">[<span id="walletAddress" style="color: blueviolet">WalletConnect</span>]</button>
+        <img id="WalletAddressImage" style="height: auto;width: 30px;"/>
+      </div>
+    </nav>
+  </div>
+  <div class="header2" style="background-color: #ad7ef9">
+    <div class="pop" style="color: rgb(255, 255, 255)">
+      Our new Solldity Course is now live!
+      <a href="/" style="color: rgb(255, 255, 255)"> Check it out now.</a>
+    </div>
+  </div>
+  <div class="mainP">
+    <div class="main-container">
+      <div class="main" style="color: black">
+        <b>Where<br />builders<br /><span style="color: blueviolet">learn to build</span></b>
+        <p>Fast track your Web3 journey through courses, Learn to build</p>
+        <div class="button-container">
+          <button class="Start" style="background-color: #7a3ddd; color: azure" onclick="window.location.href='/'">
+            Start learning
+          </button>
+          <button class="Start" onclick="window.location.href='/'">Explore courses</button>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          src="//player.bilibili.com/player.html?isOutside=true&aid=1105355954&bvid=BV1ww4m1q7uW&cid=1573847732&p=1"
+          scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="TwoPage" style="font-size: 50px">
+      <b>The<span style="color: blueviolet">ultimate ecosystem</span><br />for
+        leceling up in web3</b>
+    </div>
+    <div class="container">
+      <div class="five-1 shadow-box">
+        <b><span style="color: #7a3ddd">552k</span></b><br />code lessos completed
+      </div>
+      <div class="five-1 shadow-box">
+        <b><span style="color: #7a3ddd">552k</span></b><br />code lessos completed
+      </div>
+      <div class="five-1 shadow-box">
+        <b><span style="color: #7a3ddd">552k</span></b><br />code lessos completed
+      </div>
+    </div>
+    <div class="Barrage">
+      <div class="Ba-1-container">
+        <div class="Ba-1">
+          <b>We Pai Da XIng is Very Like This Platform</b>
+        </div>
+        <img src="../images/paiStar.jpg" alt="Pai Star" />
+      </div>
+      <div class="Ba-2c">
+        <img src="../images/paiStar.jpg" alt="Pai Star" class="Ba-2-img" />
+        <div class="Ba-2">
+          <b>We Pai Da XIng is Very Like This Platform</b>
+        </div>
+      </div>
+      <div class="Ba-1-container">
+        <div class="Ba-1" style="background-color: #ffefda">
+          <b>We Pai Da XIng is Very Like This Platform</b>
+        </div>
+        <img src="../images/paiStar.jpg" alt="Pai Star" />
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="threePag">
+      <div class="title3">
+        <b>Choose your<span style="color: #5973f6"> adventure</span></b>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-header" style="background-color: #eff9ff">
+            <img src="../images/eth-course-cion.png" style="margin-right: 2%;">
+            Remmended
+          </div>
+          <div class="card-body">
+            <h2>Ethereum Developer Bootcamp</h2>
+            <p>
+              The Ethereum Developer Bootcamp is a comprehensive course that
+              teaches you the fundamentals of EVM development from 0 to 100.
+            </p>
+            <div class="card-info">
+              <span class="info-item">14K+ enrolled</span>
+              <span class="info-item">91 lessons</span>
+              <span class="info-item">Intermediate</span>
+            </div>
+          </div>
+          <hr class="xian" />
+          <div class="card-footer">
+            <a href="courses.html" class="button">Start learning</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" style="background-color: #fffbeb">
+            <img src="../images/js-couser-cion.png" style="margin-right: 1%;">
+            Trending
+          </div>
+          <div class="card-body">
+            <h2>Learn JavaScript</h2>
+            <p>
+              3 week crash course to learn how to codeand become a JavaScript
+              expert, a corefoundation to web3 development. Noexperience
+              necessary
+            </p>
+            <div class="card-info" style="margin-top: 90px">
+              <span class="info-item">18K+ enrolled</span>
+              <span class="info-item">49 lessons</span>
+              <span class="info-item">Beginner</span>
+            </div>
+          </div>
+          <hr class="xian" style="margin-top: 120px" />
+          <div class="card-footer">
+            <a href="courses.html" class="button">Start learning</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" style="background-color: #f3f3ff">
+            <img src="../images/solidity-course-icon.png" style="margin-right: 2%;">
+            New course
+          </div>
+          <div class="card-body">
+            <h2>Learn Solidity</h2>
+            <p>
+              Master the fundamentals of Solidity - thedefacto smart contract
+              developmentlanguage for EVM chains.
+            </p>
+            <div class="card-info" style="margin-top: 110px">
+              <span class="info-item">1K+ enrolled</span>
+              <span class="info-item">11 lessons</span>
+              <span class="info-item">Intermediate</span>
+            </div>
+          </div>
+          <hr class="xian" style="margin-top: 140px" />
+          <div class="card-footer">
+            <a href="courses.html" class="button">Start learning</a>
+          </div>
+        </div>
+      </div>
+      <div class="view">
+        <a href="./courses.html" style="text-decoration: none">View all course ></a>
+      </div>
+    </div>
+  </div>
+  <div class="fourPage">
+    <div class="title4">
+      Make Cycnus Power Again🚀
+    </div>
+    <div class="title4-1">
+      <b style="color: #eff9ff;">More than just a<br>learning platform</b>
+    </div>
+    <p style="color: #eff9ff;">We've spent years building the best web3 education platform to maximize ypue learning</p>
+    <div class="switch">
+      <div class="switch-1">
+        <div class="switch-header active">
+          <h2>Code entirelyin-browser</h2>
+          No set up necessary -jump straight into building withou <br>the hassle of installations.
+        </div>
+        <div class="switch-body">
+          <img id="fixedImage" src="/images/matrix.png" alt="Image">
+        </div>
+      </div>
+      <div class="switch-1">
+        <div class="switch-header">
+          <h2>World-class web3 instructors</h2>
+          Our instructors aren't just developers. They are content-focused teachers with 5+ years of experience
+          buildingand teaching web3.
+        </div>
+        <!-- <div class="switch-body">
+              </div> -->
+      </div>
+      <div class="switch-1">
+        <div class="switch-header">
+          <h2>Earn rewards</h2>
+          Everyone likes a little treat. Level up in web3 the fun wayby getting access to collectibles along the way.
+        </div>
+        <!-- <div class="switch-body">
+              </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="finalPage">
+  <div class="title5" id="Contact">
+    ❤Support other buildoors
+  </div>
+  <div class="title5-1">
+    <b style="color: #eff9ff;">Join our community</b>
+  </div>
+  <div class="amcards">
+    <div class="amcard">
+        <div class="amicon">
+            <img src="/images/youtube.svg" alt="YouTube Logo">
+            <div class="amtitle">YouTube</div>
+        </div>
+        <div class="amsubscribe">17k subscribers</div>
+        <div class="amsubtitle">Stay up to date with our latest tutorials.</div>
+    </div>
+    <div class="amcard">
+      <div class="amicon">
+          <img src="/images/discord.svg" alt="Discord Logo">
+          <div class="amtitle">Discord</div>
+      </div>
+      <div class="amsubscribe">29k members</div>
+      <div class="amsubtitle">Join the Discord community.</div>
+    </div>
+    <div class="amcard">
+      <div class="amicon">
+          <img src="/images/twitter.svg" alt="Twitter Logo">
+          <div class="amtitle">Twitter</div>
+      </div>
+      <div class="amsubscribe">55k followers</div>
+      <div class="amsubtitle">Follow us on Twitter for announcements.</div>
+    </div>
+    <div class="amcard">
+      <div class="amicon">
+          <img src="/images/telegram.svg" alt="telegram Logo">
+          <div class="amtitle">telegram</div>
+      </div>
+      <div class="amsubscribe">17k subscribers</div>
+      <div class="amsubtitle">Stay up to date with our latest tutorials.</div>
+    </div>
+  </div>
+  <div class="i">
+    <img src="/images/cycnus.png">
+    <p style="color: white;">The web3 growthful platform</p>
+    <p style="color: white;">—— Power by THALLO Labs</p>
+  </div>
+  <div class="c">
+    <img src="/images/telegram.svg" alt="telegram Logo" style="width: 30px;height: auto;">
+    <img src="/images/twitter.svg" alt="Twitter Logo">
+    <img src="/images/discord.svg" alt="Discord Logo">
+    <img src="/images/youtube.svg" alt="YouTube Logo">
+  </div>
+  <div class="entry" style="color: #f3f3ff; display: flex;">
+    <ul class="ulUsers">
+      <li>Users</li>
+      <li>To C</li>
+      <li>To B</li>
+      <li>To U </li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Services</li>
+      <li>Free Courses</li>
+      <li>Get Degrees</li>
+      <li>Get Certifcates</li>
+      <li>Find Remote Work</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Document</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Teams</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Courses</li>
+      <li>Nature & Science</li>
+      <li>Literature</li>
+    </ul>
+    <ul class="ulUsers">
+      <li>Contact</li>
+    </ul>
+  </div>
+</div>
+  
+</body>
+
+</html>
